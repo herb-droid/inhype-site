@@ -1,0 +1,64 @@
+{
+  "_instructions": "Phase 3 site-wide SEO + conversion upgrade for iNHYPE. For each service route below, merge into src/seo/seo-data.json and update ServicePage.tsx rendering: (1) set the page H1 to the 'h1' value (keyword-rich, geo) and DEMOTE the page's current creative tagline to a sub-headline directly under the H1 (keep the eyebrow/category label above it, same style as the Endosphère and Russian Manicure pages). (2) If a 'pricing' array is present, render a pricing block identical in style to the Endosphère/Russian Manicure/HydraFacial pricing block (menu rows, right-aligned gold price, 'Individual results vary' style note where appropriate, a BOOK NOW CTA). (3) Add to each priced page's existing Service JSON-LD an 'offers'/'hasOfferCatalog' built from the pricing rows AND 'areaServed' = Redondo Beach, Manhattan Beach, Hermosa Beach, Torrance, Palos Verdes (same shape as the Endosphère page). Do NOT change titles, meta descriptions, canonicals, FAQ content, /services, /booking, the Square widget, or invent any price not listed here. endosphere-body-sculpting and russian-manicure are already done — do not touch them. Prices are real (from the live Square booking).",
+
+  "lash-extensions": {
+    "h1": "Lash Extensions in Redondo Beach",
+    "pricing": [
+      { "name": "Hybrid Full Set", "price": 165 },
+      { "name": "Volume Full Set", "price": 190 },
+      { "name": "Mega Volume Full Set", "price": 220 },
+      { "name": "Classic Fills", "price": "from 60" }
+    ]
+  },
+  "facials": {
+    "h1": "Advanced Facials in Redondo Beach",
+    "pricing": [
+      { "name": "Signature Facial", "price": 220 },
+      { "name": "Dermaplane", "price": 150 },
+      { "name": "Microdermabrasion", "price": 120 },
+      { "name": "Acne Facial", "price": 120 }
+    ]
+  },
+  "hydrafacial": {
+    "h1": "HydraFacial in Redondo Beach",
+    "_note": "Pricing already published on this page — keep it. Only fix the H1 (currently the tagline) and ensure offers+areaServed are in the schema."
+  },
+  "massage-therapy": {
+    "h1": "Massage Therapy in Redondo Beach",
+    "pricing": [
+      { "name": "Signature Massage", "price": 130 },
+      { "name": "Deep Tissue", "price": 140 },
+      { "name": "Hot Stone", "price": 150 },
+      { "name": "Brazilian Lymphatic Drainage", "price": 160 },
+      { "name": "Fascia Massage", "price": 180 },
+      { "name": "Brazilian Body Sculpting", "price": 220 }
+    ]
+  },
+  "waxing": {
+    "h1": "Waxing in Redondo Beach",
+    "pricing": [
+      { "name": "Brow Wax", "price": 30 },
+      { "name": "Lip", "price": 25 },
+      { "name": "Underarm", "price": 30 },
+      { "name": "Bikini Line", "price": 50 },
+      { "name": "Full Bikini", "price": 60 },
+      { "name": "Brazilian", "price": 70 },
+      { "name": "Leg", "price": 40 },
+      { "name": "Full Face", "price": 70 }
+    ]
+  },
+  "eyebrows": {
+    "h1": "Brows in Redondo Beach",
+    "pricing": [
+      { "name": "Brow Shaping & Wax", "price": 30 }
+    ]
+  },
+  "peptide-therapy": {
+    "h1": "Peptide Therapy in Redondo Beach",
+    "_note": "No confirmed price — do NOT add a pricing block or invent prices. H1 fix only."
+  },
+  "spray-tans": {
+    "h1": "Spray Tans in Redondo Beach",
+    "_note": "No confirmed price — do NOT add a pricing block or invent prices. H1 fix only."
+  }
+}
